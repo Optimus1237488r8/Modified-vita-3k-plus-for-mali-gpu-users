@@ -20,13 +20,11 @@ Patched from: **Vita3K-Plus v1.3.3**
 ## Install
 1. **Back up** your Vita3K data first (games, saves, config). Uninstalling
    the app can delete its data.
-2. Uninstall the original Vita3K-Plus. This build uses a different signature,
-   so it cannot be installed over the original.
-3. Install the APK from this repo. Android may ask you to allow installing
+2. Install the APK from this repo. Android may ask you to allow installing
    from unknown sources.
-4. Open **Settings**. The **Custom GPU Driver** section now shows
+3. Open **Settings**. The **Custom GPU Driver** section now shows
    **Install Driver**.
-5. Import your Mali driver and select it. The app should show
+4. Import your Mali driver and select it. The app should show
    "The selected custom driver is loaded and active."
 
 ## Drivers
@@ -38,7 +36,7 @@ Patched from: **Vita3K-Plus v1.3.3**
 ## Tested on
 - Phone / GPU: <<Samsung Galaxy A22 5g, Mali GPU>>
 - Android: <<13>>
-- Driver: <<panvk_faux123_v1.0.2.adpkg, FristOneRR>>
+- Driver: <<panvk_faux123_v1.0.2.adpkg, faux123>>
 
 Results may differ on other phones, app versions, or drivers.
 
@@ -47,6 +45,7 @@ One thing only: the app asks its native code whether to show the driver
 options, and on Mali that check says no. In this build the result is forced
 to "yes", so the option shows. The rest of the driver loading is the original
 app's code. No game content was added or removed.
+Also because of this driver one piece burning blood Invisible character bugs fix
 
 ## Warnings
 - This is unofficial and was tested only on the setup listed above.
